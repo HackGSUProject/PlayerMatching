@@ -12,4 +12,3 @@ class Users(db.Model,UserMixin):
     status = db.Column(db.Integer, nullable=False)
     discord = db.Column(db.String(50), nullable=False)
 
-
