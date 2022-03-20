@@ -21,7 +21,7 @@ load_dotenv(find_dotenv())
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = os.getenv("secretKey")
-app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL")
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("LOCAL_DATABASE_URL")
 account_sid = os.environ["TWILIO_ACCOUNT_SID"]
 auth_token = os.environ["TWILIO_AUTH_TOKEN"]
 VERIFY_SERVICE_SID = os.getenv("VERIFY_SERVICE_SID")
@@ -185,4 +185,8 @@ def index():
     return render_template("index.html")
 
 # pylint: disable=invalid-envvar-default
-app.run(host=os.getenv("IP", "0.0.0.0"), port=int(os.getenv("PORT", 8080)), debug=True)
+app.run(
+    host=os.getenv('IP', '0.0.0.0'),
+    port=int(os.getenv('PORT', 8080)),
+    debug=True
+)
