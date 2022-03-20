@@ -4,14 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=" https://www.w3schools.com/w3css/4/w3.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>Home</h1>
-    <a href="{{url_for('logout')}}">LOGOUT</a>
-    <h1>Welcome Back {{currentUser}}</h1>
-    <h1>Discord {{currentUserDiscord}}</h1>
-    <h1>{{currentUser}} match with {{match}}</h1>
-    <h1>{{match}} discord {{matchDiscord}}</h1>
+    <div class="w3-row">
+      <div class="w3-black w3-container w3-center" style="height:700px">
+        <div class="w3-padding-64">
+          <h1>Home</h1>
+        </div>
+        <div class="w3-padding-64">
+          <a href = "index.html" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Index</a> 
+          <a href = "login.html" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Login</a> 
+          <a href = "register.html" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Register</a> 
+        </div>
+      </div>
+    </div>
   </body>
 </html>
+
+
