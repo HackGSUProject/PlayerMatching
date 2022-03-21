@@ -123,4 +123,4 @@ Note: Make sure to change postgres to postgresql.
 ### Finish
 
 Great! you have installed the application.
-This application is also available at this link: [MOVIEZONE](https://desolate-garden-61394.herokuapp.com/)
+This application is also available at this link: [MOVIEZONE](https://nameless-beach-30711.herokuapp.com/)
